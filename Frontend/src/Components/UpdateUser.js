@@ -76,6 +76,8 @@ useEffect(() => {
                 </label>
                 <div className="mt-2">
                   <input
+                  required
+                    minLength={5}
                   id="fname"
                   name='FirstName' onChange={(e)=>setFirstName(e.target.value)} value={FirstName}
                     type="text"
@@ -95,6 +97,8 @@ useEffect(() => {
                 </label>
                 <div className="mt-2">
                   <input
+                  required
+                    minLength={5}
                   value={LastName}
                   name='LastName' onChange={(e)=>setLastName(e.target.value)}
                     type="text"
@@ -112,6 +116,7 @@ useEffect(() => {
                 </label>
                 <div className="mt-2">
                   <input
+                  required
                   value={email}
                   name='email' onChange={(e)=>setEmail(e.target.value)}
                     type="email"
@@ -148,6 +153,7 @@ useEffect(() => {
                 </label>
                 <div className="mt-2">
                   <input
+                  required
                   value={add1}
                   name='add1'onChange={(e)=>setAdd1(e.target.value)}
                     type="text"
